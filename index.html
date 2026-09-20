@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="nome" content="empresa Erosart">
+    <link rel="stylesheet" href="style.css">
+    <title>Erosart</title>
+</head>
+
+<body class="primeiro">
+
+    <h3 class="empresa">EROSART</h3>
+
+    <div class="navegador">
+        <a class="Erosart" href="index.html">Home</a>
+        <a class="produtos" href="produtos.html">Produtos</a>
+        <a class="sobrenos" href="sobrenos.html">Sobre-Nós</a>
+    </div>
+
+    <h3 class="representar">Venda de Materiais Eletrónicos</h3>
+
+    <img class="imagem" src="produtos.png" alt="materias eletronicos">
+
+    <div class="formulario">
+
+    <div class="container">
+        <input type="date" name="data" id="data">
+        <label for="">Data</label>
+    </div>
+
+    <div class="container">
+        <input type="text" name="nome" id="nome">
+        <label for="">Nome</label>
+    </div>
+
+    <div class="container">
+        <input type="number" name="contacto" id="contacto">
+        <label for="">Contacto</label>
+    </div>
+
+    <div class="container">
+       <input type="text" name="material" id="material" list="materias">
+       <label for="material">Material</label>
+
+        <datalist id="materias">
+        <option value="arduino mega"></option>
+        <option value="arduino nano"></option>
+        <option value="arduino uno"></option>
+        <option value="botão"></option>
+        <option value="capacitor ceramico"></option>
+        <option value="capacitor eletrolítico"></option>
+        <option value="ci 555"></option>
+        <option value="conector dc"></option>
+        <option value="conector usb"></option>
+        <option value="cristal oscilador"></option>
+        <option value="diodo zener"></option>
+        <option value="diodo"></option>
+        <option value="display lcd"></option>
+        <option value="display"></option>
+        <option value="display oled"></option>
+        <option value="esp32"></option>
+        <option value="fotodiodo"></option>
+        <option value="fusivel"></option>
+        <option value="indutor"></option>
+        <option value="infravermelho"></option>
+        <option value="interruptor"></option>
+        <option value="jampers"></option>
+        <option value="ldr"></option>
+
+    </datalist>
+    </div>
+
+   
+
+    <div class="container">
+        <input type="number" name="quantidade" id="quantidade">
+        <label for="">Quantidade</label>
+    </div>
+
+    <div class="container">
+        <input type="text" name="localizacao" id="localizacao">
+        <label for="">Localização</label>
+    </div>
+    
+    <div class="container">
+        <button onclick="encomendar()">Encomendar</button>
+    </div>
+
+    <div class="rodape">
+        <p>© 2026 Erosart - Vendas de Materias Eletrónicos</p>
+        <p>📞 +244 974519069</p>
+        <P>✉ herosmitepedro@gmail.com</P>
+        <p>facebook: Erosart</p>
+        <p>📍 Luanda, Angola</p>
+        
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
