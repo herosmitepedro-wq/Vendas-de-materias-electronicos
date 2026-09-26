@@ -5,6 +5,38 @@
     font-family: monospace;
 }
 
+.caixaMateriais{
+    width: 400px;
+    max-height: 250px;
+    overflow-y: auto;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.caixaMateriais h3{
+    margin: 5px 0 15px;
+}
+
+.listaMateriais{
+    width: 100%;
+}
+
+.itemMaterial{
+    padding: 10px;
+    margin-bottom: 10px;
+    border:  1px solid #ccc;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.total{
+    text-align: right;
+}
+
 .primeiro{
     width: 100%;
     min-height: 100vh;
@@ -42,7 +74,7 @@
     bottom: auto;
     width: 80%;
     max-width: none;
-    height: 1100px;
+    height: 1380px;
     min-height: 0;
     margin: 50px auto 50px;
     padding: 20px 15px;

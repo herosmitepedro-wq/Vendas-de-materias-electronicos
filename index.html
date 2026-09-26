@@ -39,47 +39,38 @@
     </div>
 
     <div class="container">
-       <input type="text" name="material" id="material" list="materias">
-       <label for="material">Material</label>
+        <input type="text" name="material" id="material" list="listaMateriais">
+        <label for="material">Material</label>
 
-        <datalist id="materias">
-        <option value="arduino mega"></option>
-        <option value="arduino nano"></option>
-        <option value="arduino uno"></option>
-        <option value="botão"></option>
-        <option value="capacitor ceramico"></option>
-        <option value="capacitor eletrolítico"></option>
-        <option value="ci 555"></option>
-        <option value="conector dc"></option>
-        <option value="conector usb"></option>
-        <option value="cristal oscilador"></option>
-        <option value="diodo zener"></option>
-        <option value="diodo"></option>
-        <option value="display lcd"></option>
-        <option value="display"></option>
-        <option value="display oled"></option>
-        <option value="esp32"></option>
-        <option value="fotodiodo"></option>
-        <option value="fusivel"></option>
-        <option value="indutor"></option>
-        <option value="infravermelho"></option>
-        <option value="interruptor"></option>
-        <option value="jampers"></option>
-        <option value="ldr"></option>
-
-    </datalist>
+        <datalist id="listaMateriais">
+            <option value="arduino mega"></option>
+            <option value="arduino nano"></option>
+            <option value="arduino uno"></option>
+            <option value="botão"></option>
+            <option value="capacitor ceramico"></option>
+            <option value="capacitor eletrolítico"></option>
+        </datalist>
     </div>
-
-   
 
     <div class="container">
-        <input type="number" name="quantidade" id="quantidade">
-        <label for="">Quantidade</label>
+        <input type="number" name="quantidade" id="quantidade" value="1" min="1">
+        <label for="quantidade">Quantidade</label>
     </div>
+
+    <div class="container">
+        <button type="button" onclick="adicionarMaterial()">Adicionar Material</button>
+    </div>
+
 
     <div class="container">
         <input type="text" name="localizacao" id="localizacao">
         <label for="">Localização</label>
+    </div>
+
+    <div class="caixaMateriais">
+        <h3>Materiais adicionados</h3>
+        <div id="verMateriais"></div>
+        <h3 id="total">Total: 0 kz</h3>
     </div>
     
     <div class="container">
