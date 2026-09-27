@@ -87,12 +87,18 @@ function encomendar(){
     }
 
     let textoMateriais = "";
+    let total = 0;
 
     for(let i = 0; i < materiais.length; i++){
 
+        let subtotal = Number(materiais[i].subtotal);
+
         textoMateriais += materiais[i].nome +
         "- Quantidade: " + materiais[i].quantidade +
-        "\n";
+         + materiais[i].preco +  "kz" + subtotal +
+        "kz\n";
+
+        total = total + materiais[i].subtotal;
     }
 
     let numero = "244974519069";
@@ -101,7 +107,7 @@ function encomendar(){
     "*Data*: " + data + "\n" +
     "*Nome*: " + nome + "\n" +
     "*Contacto*: " + contacto + "\n\n" +
-    "*Materiais:*\n" + textoMateriais + "\n*Localização*: " + localizacao;
+    "*Materiais:*\n" + textoMateriais + "\n*Total: " + total + " kz*\n\n" + "*Localização*: " + localizacao;
 
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`,
     "_blank"
