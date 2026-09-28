@@ -177,9 +177,9 @@ function encomendar(){
         let subtotal = Number(materiais[i].subtotal);
 
         textoMateriais += materiais[i].nome +
-        "- Quantidade: " + materiais[i].quantidade +
-        + materiais[i].preco +  "kz" + subtotal +
-        "kz\n";
+        "- Quantidade: " + materiais[i].quantidade + " | " 
+        + materiais[i].preco +  " kz = " + materiais[i].subtotal +
+        " kz\n";
 
         total = total + materiais[i].subtotal;
     }
