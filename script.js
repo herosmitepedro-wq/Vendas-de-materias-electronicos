@@ -184,7 +184,7 @@ function encomendar(){
         total = total + materiais[i].subtotal;
     }
 
-    let numero = "244974519069";
+    let numero = "244958160691";
 
     let mensagem = "*Nova Encomenda Erosart*\n\n" +
     "*Data*: " + data + "\n" +
